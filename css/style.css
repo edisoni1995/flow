@@ -1,0 +1,755 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+.container-fluid{
+	padding:0;
+}
+
+.no-margin{
+  margin:0;
+}
+
+
+
+
+
+
+/******************************************
+================= HEADER ==================
+*******************************************/
+.navbar.navbar-default{
+	background: #fff;
+}
+#navbar ul li.active a{
+	background: none;
+}
+.navbar .container .navbar-nav li a:hover:before, .navbar .container .navbar-nav li a:focus:before {
+    height: 5px;
+}
+.navbar .container .navbar-nav li a:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #e74c3c;
+    -webkit-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+}
+.navbar .container .navbar-nav li a {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #43494e;
+}
+.navbar .container .navbar-nav li a:hover, .navbar .container .navbar-nav li a:focus {
+    color: #e74c3c;
+    background: none;
+}
+.navbar-nav>li>a {
+
+    padding: 22px 20px;
+}
+.navbar-default .navbar-brand{
+	color: #e67e22;
+    font-size: 21px;
+    font-weight: 600;
+    height: 65px;
+    line-height: 40px;
+}
+
+.navbar-brand img{
+	height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+.navbar.navbar-default {
+    border:none;
+    min-height: 65px;
+    margin-bottom:0;
+}
+
+.navbar-nav li a span{
+	background: #e67e22;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/******************************************
+=============== END HEADER ================
+*******************************************/
+
+
+
+/******************************************
+================= BODY  ==================
+*******************************************/
+body{
+	background-color: #f9f9f9
+}
+
+#animation{
+	background-color: #A7C855;
+  max-width: 100%;
+  padding-top:30px;
+  min-height: 500px;
+}
+
+
+
+@keyframes appear{
+	0%{
+		transform:scale(0.8);
+		transform-origin: 50% 50%;
+		opacity:0;
+	}
+	95%{
+		transform:scale(1.05);
+		transform-origin: 50% 50%;
+		opacity:0.5;
+	}
+	100%{
+		transform:scale(1);
+		transform-origin: 50% 50%;
+		opacity:1;
+	}
+}
+
+#web{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+}
+
+#notebook{
+	animation: appear 0.2s ease-in-out, float 2s cubic-bezier(0.51, 0.05, 0.6, 0.99) infinite;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+}
+
+#bubbles{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+
+#cloud{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.1s;
+	animation-fill-mode: both;
+}
+
+#list{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.2s;
+	animation-fill-mode: both;
+}
+
+#guy1{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+}
+
+#guy2{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.6s;
+	animation-fill-mode: both;
+}
+
+#guy3{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.7s;
+	animation-fill-mode: both;
+}
+
+
+#boy{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.3s;
+	animation-fill-mode: both;
+}
+
+#pencil{
+	animation: appear 0.2s ease-in-out, write 2s infinite;
+	animation-delay: 1.4s;
+	animation-fill-mode: both;
+}
+
+#music{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+}
+
+#girl{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+}
+
+#alien{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.6s;
+	animation-fill-mode: both;
+}
+
+#lines{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.9s;
+	animation-fill-mode: both;
+}
+
+#face1{
+	animation: appear 0.2s ease-in-out, spin 5s infinite;
+	animation-delay: 1.2s;
+	animation-fill-mode: both;
+}
+
+
+#face2{
+	animation: appear 0.2s ease-in-out, spin 5s infinite;
+	animation-delay: 1.4s;
+	animation-fill-mode: both;
+}
+
+#face3{
+	animation: appear 0.5s ease-in-out, spin 5s infinite;
+	animation-delay: 1.6s;
+	animation-fill-mode: both;
+}
+
+#description{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.9s;
+	animation-fill-mode: both;
+}
+
+#id{
+	animation: appear 0.2s ease-in-out;
+	animation-delay: 1.9s;
+	animation-fill-mode: both;
+}
+
+#interest{
+	animation: appear 0.2s ease-in-out, shake 2s infinite;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+}
+
+
+/* ya aparecieron todos, ahora se mueven */
+
+@keyframes spin{
+	0%{
+		transform: rotate(360deg);
+		transform-origin: 50% 50%;
+	}
+	10%{
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+}
+
+@keyframes write{
+	0%{
+		transform: rotate(0deg);
+		transform-origin: 0% 100%;
+	}
+	50%{
+		transform: rotate(5deg);
+		transform-origin: 0% 100%;
+	}  
+	100%{
+		transform: rotate(0deg);
+		transform-origin: 0% 100%;
+	}
+}
+
+@keyframes shake{
+	0%{
+		transform: rotate(0deg);
+		transform-origin: 100% 100%;
+	}
+	50%{
+		transform: rotate(5deg);
+		transform-origin: 100% 100%;
+	}  
+	100%{
+		transform: rotate(0deg);
+		transform-origin: 100% 100%;
+	}
+}
+
+@keyframes float{
+	0%{ transform:translatey(0%);}
+	50%{ transform:translatey(5%);}
+	100%{ transform:translatey(0%);}
+}
+
+#features{
+	margin-top:50px;
+  overflow-x: hidden;
+  margin-bottom:50px;
+}
+
+#features .info-box {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(230, 126, 34, 0.16);
+    transition: .3s;
+}
+
+#features .text h3 {
+    margin: 5px 0px;
+    color: #d35400;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: left;
+    padding-left: 110px;
+    padding-top: 10px;
+}
+
+.boxes {
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.boxes .fa {
+    line-height: 2;
+    color:#e67e22;
+}
+
+
+
+.info-box:hover {
+    box-shadow: 3px 3px 12px #c19065;
+}
+
+
+
+/* login */
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.sign-up-form-holder {
+    text-align: left;
+    padding-bottom: 50px;
+    padding-right: 10%;
+}
+
+.sign-up-form-holder h1 {
+    color: #e67e22;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.control-label {
+    color: #e67e22;
+    font-weight: bolder;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.form-group input[type="text"], .form-group input[type="password"], .form-group input[type="email"], .form-group select {
+    text-align: left;
+    font-size: 14px;
+    color: #aeaeae;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    outline: 0;
+    height: auto!important;
+    box-shadow: none!important;
+}
+
+.log-in{
+	display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin-top: 25px;
+    background: #e67e22;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+.log-in:hover{
+	color:#fff;
+}
+
+input.form-control:focus{
+	border: 1px solid #e67e22;
+    box-shadow: 1px 1px 6px #e67e22!important;
+}
+.no-padding{
+	padding:0;
+}
+
+/* end login */
+
+/* sign up */
+.info{
+	margin-bottom: 30px;
+}
+#signup .first{
+	margin-top:35px;
+}
+.info .fa{
+	font-size: 43px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    padding: 15px;
+    background: #f9f9f9;
+    color: #e67e22;
+}
+
+.info h2{
+	display: inline-block;
+    margin-left: 20px;
+    color: #e67e22;
+}
+.info .fa-globe{
+	padding: 15px 18px;
+}
+.info .fa-tablet{
+  padding: 15px 23px;
+}
+
+#signup h1{
+	margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 33px;
+}
+
+#signup .control-label {
+    margin-bottom: 10px;
+}
+/******************************************
+=============== END BODY  =================
+*******************************************/
+
+
+/******************************************
+================= FOOTER ==================
+*******************************************/
+.ribbon li {
+	height: 8px;
+}
+
+.ribbon li a {
+	padding: 4px 15px;
+	-webkit-transform: scaleY(1) scaleX(1);
+	-ms-transform: scaleY(1) scaleX(1);
+	transform: scaleY(1) scaleX(1);
+	position: relative;
+	z-index: 1;
+	cursor: default;
+}
+
+.ribbon li:nth-child(1) a {
+	background: #1abc9c;
+}
+
+.ribbon li:nth-child(2) a {
+	background: #e67e22;
+}
+.ribbon li:nth-child(3) a {
+	background: #3498db;
+}
+.ribbon li:nth-child(4) a {
+	background: #e74c3c;
+}
+
+.ribbon li:nth-child(5) a {
+	background: #9b59b6;
+}
+
+.ribbon li:nth-child(6) a {
+	background: #f1c40f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.widget .widget_title {
+  line-height: 1;
+  color: #43494e;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid  #e8ebed;
+  position: relative;
+  font-weight: bold;
+}
+
+.widget .widget_title:after {
+  content: '';
+  width: 70px;
+  height: 1px;
+  background: #e67e22;
+  bottom: -1px;
+  left: 0;
+  position: absolute;
+}
+
+
+.widget.w_in_footer .widget_title {
+  color: #6b7881;
+  border-bottom: 1px solid  #47545d;
+}
+.widget.w_in_footer.widget_about a {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.widget.w_in_footer.widget_about p {
+  margin-bottom: 0;
+  color: #6b7881;
+  text-align: justify;
+  font-weight: 400;
+}
+.widget.w_in_footer.widget_subscribe form .form-control {
+  background-color: transparent;
+  border: 1px solid #6b7881;
+  border-radius: 2px;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 38px;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  color:#fff;
+}
+.widget.w_in_footer.widget_subscribe form .form-control:focus {
+  border-color: #e74c3c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(231, 76, 60, 0.75), 0 0 8px rgba(231, 76, 60, 0.8);
+  box-shadow: inset 0 1px 1px rgba(231, 76, 60, 0.75), 0 0 8px rgba(231, 76, 60, 0.8);
+  color:#fff;
+}
+.widget.w_in_footer.widget_subscribe form .form-control + .form-control {
+  margin-top: 10px;
+}
+.widget.w_in_footer.widget_subscribe form .form-control::-moz-placeholder {
+  color: #6b7881;
+  opacity: 1;
+  text-transform: capitalize;
+  transition: all 300ms ease-in-out 0s;
+}
+.widget.w_in_footer.widget_subscribe form .form-control:-ms-input-placeholder {
+  color: #6b7881;
+  text-transform: capitalize;
+  transition: all 300ms ease-in-out 0s;
+}
+.widget.w_in_footer.widget_subscribe form .form-control::-webkit-input-placeholder {
+  color: #6b7881;
+  text-transform: capitalize;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+.widget.w_in_footer.widget_subscribe form .form-control:focus::-moz-placeholder {
+  color: #f1f4f5;
+}
+.widget.w_in_footer.widget_subscribe form .form-control:focus:-ms-input-placeholder {
+  color: #f1f4f5;
+}
+.widget.w_in_footer.widget_subscribe form .form-control:focus::-webkit-input-placeholder {
+  color: #f1f4f5;
+}
+.widget.w_in_footer.widget_subscribe form .form-control.btn {
+  background: #e67e22;
+  text-shadow: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+.widget.w_in_footer.widget_subscribe form .form-control.btn:hover {
+  background: #bf681a;
+  color: #f1f4f5;
+}
+
+.widget.w_in_footer.widget_tags .tag {
+  color: #6b7881;
+  border-radius: 2px;
+  line-height: 28px;
+  padding: 0 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 7px;
+  display: block;
+}
+.widget.w_in_footer.widget_tags .tag:hover {
+  color: #e67e22;
+}
+
+/*----------------------------------------------------------------*/
+footer {
+  background: #313b42;
+  padding: 85px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright { 
+	min-height:40px;
+	background-color:#696969;
+}
+
+.copyright p { 
+	color:#FFF;
+	padding:10px 0;
+	margin-bottom:0px;
+}
+#bottom-logo{
+    font-size: 27px;
+    color: #e67e22;
+
+}
+#bottom-logo img{
+    width: 45px;
+    float: left;
+    margin-right: 15px;
+    margin-top: -2px;
+}
+
+
+/******************************************
+=============== END FOOTER ================
+*******************************************/
+
+
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.left,.right{
+  opacity: 0;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}

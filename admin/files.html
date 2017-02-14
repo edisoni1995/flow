@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/dashboard.css">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+</head>
+<body>
+	<div class="nav-side-menu">
+		<div class="brand"><i class="fa fa-play main-icon" aria-hidden="true"></i><h3>Flow</h3><h4>Your video</h4></div>
+		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+		<div class="menu-list">
+
+			<ul id="menu-content" class="menu-content collapse out">
+				<li>
+					<a href="index.html">
+						<i class="fa fa-dashboard fa-lg"></i> Dashboard
+					</a>
+				</li>
+
+
+				
+
+				<li class="active">
+					<a href="#">
+						<i class="fa fa-user fa-lg"></i> File manager
+					</a>
+				</li>
+
+				<li>
+					<a href="remote-upload.html">
+						<i class="fa fa-users fa-lg"></i> Remote Upload
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="fa fa-users fa-lg"></i> Settings
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="fa fa-users fa-lg"></i> Statistics
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+
+	<div id="content" class="toggled">
+		<div class="navbar">
+			<span class="fa fa-bars fa-2x desktop-menu"></span>
+			<div class="navbar-brand">Flow your video</div>
+			<div class="pull-right upload-btn">
+				<a class="btn" href="upload.html">
+					<i class="fa fa-cloud-upload" aria-hidden="true"></i>Upload
+				</a>
+				<a class="logout" href="../index.html">
+					Log Out<i class="fa fa-sign-out" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			
+			
+
+			<div class="panel panel-info">
+			  <!-- Default panel contents -->
+			  <div class="panel-heading">My files</div>
+				<div class="panel-body panel-info">
+				    <div class="row">
+				    	<div class="col-md-5">
+				    		<button type="button" class="btn btn-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i>Select All</button>
+				    		<button type="button" class="btn btn-primary"><i class="fa fa-link" aria-hidden="true"></i>Copy Link</button>
+				    		<button type="button" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Create Folder</button>
+				    	</div>
+
+				    	<div class="col-md-5 pull-right">
+				    		<button type="button" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>Rename</button>
+				    		<button type="button" class="btn btn-primary"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+				    		<button type="button" class="btn btn-primary"><i class="fa fa-share" aria-hidden="true"></i>Move</button>
+				    		<button type="button" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>
+				    	</div>	
+				    </div>
+				</div>
+			</div>
+			  <!-- Table -->
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>
+								<fieldset class="form-group">
+									<input type="checkbox" id="checkbox2">
+									<label for="checkbox2"></label>
+								</fieldset>
+							</th>
+							<th></th>
+							<th>Name</th>
+							<th>Size</th>
+							<th>Content type</th>
+							<th>Uloaded at</th>
+							<th>Views</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="folder">
+							<td>
+								<fieldset class="form-group">
+									<input type="checkbox" id="checkbox1">
+									<label for="checkbox1"></label>
+								</fieldset>
+							</td>
+							<td></td>
+							<td><i class="fa fa-folder" aria-hidden="true"></i>Ashley</td>
+							<td>Lynwood</td>
+							<td>@ashow</td>
+							<td>
+								<a class="blue-text"><i class="fa fa-user"></i></a>
+								<a class="teal-text"><i class="fa fa-pencil"></i></a>
+								<a class="red-text"><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr class="folder">
+						  
+							<td>
+								<fieldset class="form-group">
+									<input type="checkbox" id="checkbox2">
+									<label for="checkbox2"></label>
+								</fieldset>
+							</td>
+							<td></td>
+							<td><i class="fa fa-folder" aria-hidden="true"></i>Billy</td>
+							<td>Cullen</td>
+							<td>@cullby</td>
+							<td>
+								<a class="blue-text"><i class="fa fa-user"></i></a>
+								<a class="teal-text"><i class="fa fa-pencil"></i></a>
+								<a class="red-text"><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr class="folder">
+							<td>
+								<fieldset class="form-group">
+									<input type="checkbox" id="checkbox3">
+									<label for="checkbox3"></label>
+								</fieldset>
+							</td>
+							<td></td>
+							<td><i class="fa fa-folder" aria-hidden="true"></i>Ariel</td>
+							<td>Macy</td>
+							<td>@arielsea</td>
+							<td>
+								<a class="blue-text"><i class="fa fa-user"></i></a>
+								<a class="teal-text"><i class="fa fa-pencil"></i></a>
+								<a class="red-text"><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr>
+							
+							<td>
+								<fieldset class="form-group">
+									<input type="checkbox" id="checkbox3">
+									<label for="checkbox3"></label>
+								</fieldset>
+							</td>
+							<td></td>
+							<td><i class="fa fa-folder" aria-hidden="true"></i>Ariel</td>
+							<td>Macy</td>
+							<td>@arielsea</td>
+							<td>
+								<a class="blue-text"><i class="fa fa-user"></i></a>
+								<a class="teal-text"><i class="fa fa-pencil"></i></a>
+								<a class="red-text"><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr>
+							
+							<td>
+								<fieldset class="form-group">
+									<input type="checkbox" id="checkbox3">
+									<label for="checkbox3"></label>
+								</fieldset>
+							</td>
+							<td></td>
+							<td><i class="fa fa-folder" aria-hidden="true"></i>Ariel</td>
+							<td>Macy</td>
+							<td>@arielsea</td>
+							<td>
+								<a class="blue-text"><i class="fa fa-user"></i></a>
+								<a class="teal-text"><i class="fa fa-pencil"></i></a>
+								<a class="red-text"><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			
+		</div>
+		
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/dashboard.js"></script>
+</body>
+</html>
