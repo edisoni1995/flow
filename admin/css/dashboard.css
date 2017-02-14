@@ -81,12 +81,13 @@ body{
 	vertical-align: middle;
 }
 .nav-side-menu li {
-	padding-left: 0px;
 	border-bottom: 1px solid #23282e;
+    padding: 10px 4px;
 }
 .nav-side-menu li a {
 	text-decoration: none;
 	color: #e1ffff;
+    display: block;
 }
 .nav-side-menu li a i {
 	padding-left: 10px;
@@ -185,6 +186,15 @@ body{
 		padding-left: 20px;
 		line-height: 50px !important;
 	}
+    #content.toggled {
+        margin-left: 0px;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .fa-play.main-icon{
+        display: none;
+    }
 }
 @media (min-width: 767px) {
 	.nav-side-menu .menu-list .menu-content {
@@ -301,9 +311,6 @@ body {
 
 #upload-background{
 	padding-bottom: 0;
-    background-image: url(https://thevideo.me/images/background_image.jpg);
-    background-repeat: no-repeat;
-    background-position: center 50px;
     min-height: 350px ; 	
     position: relative;
 }

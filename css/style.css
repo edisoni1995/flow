@@ -449,6 +449,51 @@ input.form-control:focus{
 #signup .control-label {
     margin-bottom: 10px;
 }
+
+/* end sign up */
+
+/* single video */
+h3.video-title{
+    font-weight: 400;
+    color: #00aeef;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+.video-size {
+    font-size: 16px;
+    color: #7a8b9a;
+    line-height: 27px;
+    text-align: left!important;
+    display: inline-block;
+}
+.video-btn{
+    display: inline-block;
+    margin-left: 20px;
+}
+.video-btn .btn {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    margin-right: 5px;
+}
+.embed{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.player{
+    margin-top:30px;
+}
 /******************************************
 =============== END BODY  =================
 *******************************************/
@@ -752,4 +797,15 @@ footer {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+
+
+
+
+@media (max-width: 767px) {
+  
+    #animation{
+      min-height: 200px;
+    }
+
 }
