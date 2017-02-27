@@ -9,10 +9,6 @@
 }
 
 
-
-
-
-
 /******************************************
 ================= HEADER ==================
 *******************************************/
@@ -240,7 +236,6 @@ body{
 }
 
 
-/* ya aparecieron todos, ahora se mueven */
 
 @keyframes spin{
 	0%{
@@ -539,17 +534,6 @@ h3.video-title{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .widget .widget_title {
   line-height: 1;
   color: #43494e;
@@ -723,7 +707,7 @@ footer {
 *******************************************/
 
 
-
+/* animations */
 
 @-webkit-keyframes fadeInLeft {
   from {
@@ -800,6 +784,8 @@ footer {
 }
 
 
+
+/* css style for small devices */
 
 
 @media (max-width: 767px) {
