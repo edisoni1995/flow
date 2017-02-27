@@ -83,139 +83,173 @@
 
 			<div class="panel panel-info">
 			  <!-- Default panel contents -->
-			  <div class="panel-heading">My files</div>
+			  	<div class="panel-heading">My files</div>
 				<div class="panel-body panel-info">
 				    <div class="row">
 				    	<div class="col-md-5">
-				    		<button type="button" class="btn btn-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i>Select All</button>
-				    		<button type="button" class="btn btn-primary"><i class="fa fa-link" aria-hidden="true"></i>Copy Link</button>
-				    		<button type="button" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Create Folder</button>
+				    		<button type="button" class="btn btn-primary select-all"><i class="fa fa-check-square-o" aria-hidden="true"></i>Select All</button>
+				    		<button type="button" class="btn btn-primary copy-link"><i class="fa fa-link" aria-hidden="true"></i>Copy Link</button>
+				    		<button type="button" class="btn btn-primary creat-folder" data-toggle="modal" href='#create-folder'><i class="fa fa-plus" aria-hidden="true"></i>Create Folder</button>
 				    	</div>
 
 				    	<div class="col-md-5 pull-right">
-				    		<button type="button" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>Rename</button>
-				    		<button type="button" class="btn btn-primary"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
-				    		<button type="button" class="btn btn-primary"><i class="fa fa-share" aria-hidden="true"></i>Move</button>
-				    		<button type="button" class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>
+				    		<button type="button" class="btn btn-primary rename-file"><i class="fa fa-pencil" aria-hidden="true"></i>Rename</button>
+				    		<button type="button" class="btn btn-primary copy-file"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+				    		<button type="button" class="btn btn-primary move-file"><i class="fa fa-share" aria-hidden="true"></i>Move</button>
+				    		<button type="button" class="btn btn-danger delete-file"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>
 				    	</div>	
 				    </div>
 				</div>
 			</div>
 			  <!-- Table -->
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th>
-								<fieldset class="form-group">
-									<input type="checkbox" id="checkbox2">
-									<label for="checkbox2"></label>
-								</fieldset>
-							</th>
-							<th></th>
-							<th>Name</th>
-							<th>Size</th>
-							<th>Content type</th>
-							<th>Uloaded at</th>
-							<th>Views</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="folder">
-							<td>
-								<fieldset class="form-group">
-									<input type="checkbox" id="checkbox1">
-									<label for="checkbox1"></label>
-								</fieldset>
-							</td>
-							<td></td>
-							<td><i class="fa fa-folder" aria-hidden="true"></i>Ashley</td>
-							<td>Lynwood</td>
-							<td>@ashow</td>
-							<td>
-								01/12/2017
-							</td>
-							<td>100</td>
-						</tr>
-						<tr class="folder">
-						  
-							<td>
-								<fieldset class="form-group">
-									<input type="checkbox" id="checkbox2">
-									<label for="checkbox2"></label>
-								</fieldset>
-							</td>
-							<td></td>
-							<td><i class="fa fa-folder" aria-hidden="true"></i>Billy</td>
-							<td>Cullen</td>
-							<td>@cullby</td>
-							<td>
-								01/12/2017
-							</td>
-							<td>100</td>
-						</tr>
-						<tr class="folder">
-							<td>
-								<fieldset class="form-group">
-									<input type="checkbox" id="checkbox3">
-									<label for="checkbox3"></label>
-								</fieldset>
-							</td>
-							<td></td>
-							<td><i class="fa fa-folder" aria-hidden="true"></i>Ariel</td>
-							<td>Macy</td>
-							<td>@arielsea</td>
-							<td>
-								01/12/2017
-							</td>
-							<td>100</td>
-						</tr>
-						<tr>
-							
-							<td>
-								<fieldset class="form-group">
-									<input type="checkbox" id="checkbox3">
-									<label for="checkbox3"></label>
-								</fieldset>
-							</td>
-							<td></td>
-							<td><i class="fa fa-folder" aria-hidden="true"></i>Ariel</td>
-							<td>Macy</td>
-							<td>@arielsea</td>
-							<td>
-								01/12/2017
-							</td>
-							<td>100</td>
-						</tr>
-						<tr>
-							
-							<td>
-								<fieldset class="form-group">
-									<input type="checkbox" id="checkbox3">
-									<label for="checkbox3"></label>
-								</fieldset>
-							</td>
-							<td></td>
-							<td><i class="fa fa-folder" aria-hidden="true"></i>Ariel</td>
-							<td>Macy</td>
-							<td>@arielsea</td>
-							<td>
-								01/12/2017
-							</td>
-							<td>100</td>
-						</tr>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							<fieldset class="form-group">
+								<input type="checkbox" id="selectAll">
+								<label for="checkbox2"></label>
+							</fieldset>
+						</th>
+						<th></th>
+						<th>Name</th>
+						<th>Size</th>
+						<th>Content type</th>
+						<th>Uloaded at</th>
+						<th>Views</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="folder">
+						<td>
+							<fieldset class="form-group">
+								<input type="checkbox" id="checkbox1">
+								<label for="checkbox1"></label>
+							</fieldset>
+						</td>
+						<td></td>
+						<td class='folder-name'><i class="fa fa-folder" aria-hidden="true"></i>MOVIES 2016<button type="button" class="hidden btn btn-info move-to">Move here</button></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr class="folder">
+					  
+						<td>
+							<fieldset class="form-group">
+								<input type="checkbox" id="checkbox2">
+								<label for="checkbox2"></label>
+							</fieldset>
+						</td>
+						<td></td>
+						<td class='folder-name'><i class="fa fa-folder" aria-hidden="true"></i>movies 2017<button type="button" class="hidden btn btn-info move-to">Move here</button></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr class="file">
+						<td>
+							<fieldset class="form-group">
+								<input type="checkbox" id="checkbox3">
+								<label for="checkbox3"></label>
+							</fieldset>
+						</td>
+						<td></td>
+						<td class="file-name"><i class="fa fa-folder" aria-hidden="true"></i>moonlight</td>
+						<td>500mb</td>
+						<td>video</td>
+						<td>
+							01/12/2017
+						</td>
+						<td>100</td>
+					</tr>
+					<tr class='file'>
+						
+						<td>
+							<fieldset class="form-group">
+								<input type="checkbox" id="checkbox3">
+								<label for="checkbox3"></label>
+							</fieldset>
+						</td>
+						<td></td>
+						<td class='file-name'><i class="fa fa-folder" aria-hidden="true"></i>La la land</td>
+						<td>1.2GB</td>
+						<td>video</td>
+						<td>
+							01/12/2017
+						</td>
+						<td>150</td>
+					</tr>
 
-					</tbody>
-				</table>
+				</tbody>
+			</table>
+
+
+			<div class="modal fade" id="create-folder">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Create a new folder</h4>
+						</div>
+						<div class="modal-body">
+							<input autofocus type="text" name="folder-name" id="inputFolder" class="form-control" required="required" placeholder="Enter folder name" title="Enter folder name">
+						</div>
+						<div class="modal-footer">
+							<button type="button" onclick="createFolder(this)" class="btn btn-success">Create Folder</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="rename-file">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Rename file</h4>
+						</div>
+						<div class="modal-body">
+							<input autofocus type="text" name="folder-name" id="file-name" class="form-control" required="required" placeholder="Enter file name" title="Enter folder name">
+						</div>
+						<div class="modal-footer">
+							<button type="button" onclick="renameFile(this)" class="btn btn-success">Rename</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="delete-file">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Delete file</h4>
+						</div>
+						<div class="modal-body">
+							Are you sure you want to delete 
+						</div>
+						<div class="modal-footer">
+							<button type="button" onclick="deleteFile(this)" class="btn btn-danger">Delete</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 		</div>
 		
 
 	</div>
 
+
+
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="js/dashboard.js"></script>
+	<script src="js/file-manager.js"></script>
 </body>
 </html>
