@@ -1,7 +1,10 @@
 body{
 	font-family: "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.breadcrumb{
+    background: #fff;
+    padding: 15px;
+}
 
 .nav-side-menu {
 	overflow: auto;
