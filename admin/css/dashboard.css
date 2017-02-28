@@ -325,6 +325,12 @@ body {
 
 
 /* files */
+.table tr.folder{
+    height: 55px;
+}
+td.folder-name{
+    cursor: pointer;
+}
 .table .fa-folder{
 	display: none;
 }
